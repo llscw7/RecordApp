@@ -1,5 +1,7 @@
 import { Image, StyleSheet, Platform } from 'react-native';
 
+// import { NativeBaseProvider, Box, Button } from "native-base";
+
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -19,6 +21,11 @@ export default function HomeScreen() {
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
+      {/* <NativeBaseProvider>
+        <Box>
+          <Button onPress={() => console.log("hello world")}>Click Me</Button>
+        </Box>
+      </NativeBaseProvider> */}
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
